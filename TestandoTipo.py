@@ -9,4 +9,6 @@ print('O tipo primitivo desse valor é: ', type(x))
 # O que fazer para descobrir seu tipo então???
 # Pode fazer testes através de perguntas que retornam um valor bool:
 
-print('É um número? ',x.isnumeric())
+print('É um valor inteiro? ',x.isnumeric())
+print('É um valor decimal? ',x.isdecimal())
+print('É um valor alfanumérico? ',x.isalnum())
