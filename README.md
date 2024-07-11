@@ -1,3 +1,3 @@
 # Praticando_python
  
-<img src="Logo-python.png" width=50%>
+<img src="Logo-python.png" width=20%>
