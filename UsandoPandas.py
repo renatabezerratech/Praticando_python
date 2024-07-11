@@ -15,10 +15,5 @@
 import numpy as np
 import pandas as pd
 
-tabela_x = pd.read_csv('ParaPandas.csv')
-#y = tabela_x.count
-#print(y)
-
-
-z = tabela_x ['info']
-display(z)
+tabelaParaPandas_df = pd.read_excel("ParaPandas.xlsx")
+print(tabelaParaPandas_df)   # No jupiter use display
