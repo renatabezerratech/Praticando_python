@@ -29,20 +29,29 @@
 #except KeyboardInterrupt:
 #    print(f"\nCoordenadas finais: X={x}, Y={y}")
 #    print("\nPrograma interrompido.")
+#
+#   ou vc pode usar o arquivo auxiliar.py que fiz com position
+#
 #-------------------------------------------------------------------------
 
 # Programa:
 import time
 import pyautogui
+pyautogui.PAUSE = 0.5   # esse comando atribui esse tempo de espera para cada comando pyautogui
 pyautogui.press('win')
 pyautogui.write('chrome')
-pyautogui.PAUSE = 0.5
 pyautogui.press('enter')
 
 x, y = 1170, 500  # Substitua pelas coordenadas 
 pyautogui.moveTo(x, y, duration=8)  # Mova para as coordenadas em 1 segundo
-time.sleep(0.5)  # Atraso adicional antes de clicar
+time.sleep(0.5)  # Atraso adicional antes de clicar apenas nos locais onde eu utilizei
 pyautogui.click(x, y)
 
 pyautogui.write("https://estacio.br/")
 pyautogui.press('enter')
+time.sleep(1)
+
+#x=976, y=602
+pyautogui.click(976,602)
+pyautogui.hotkey('ctrl','a')
+pyautogui.write('ciencia da computacao')
