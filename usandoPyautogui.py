@@ -36,10 +36,13 @@ import time
 import pyautogui
 pyautogui.press('win')
 pyautogui.write('chrome')
+pyautogui.PAUSE = 0.5
 pyautogui.press('enter')
 
 x, y = 1170, 500  # Substitua pelas coordenadas 
-pyautogui.moveTo(x, y, duration=10)  # Mova para as coordenadas em 1 segundo
+pyautogui.moveTo(x, y, duration=8)  # Mova para as coordenadas em 1 segundo
 time.sleep(0.5)  # Atraso adicional antes de clicar
 pyautogui.click(x, y)
 
+pyautogui.write("https://estacio.br/")
+pyautogui.press('enter')
